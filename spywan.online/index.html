@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+    
+            // Simulate server-side authentication (replace with actual server-side logic)
+            if (authenticateUser(username, password)) {
+                window.location.assign('dashboard.html');
+            } else {
+                alert('Incorrect username or password');
+            }
+            return false; // Prevent form submission
+        }
+    
+        // Example function to simulate server-side authentication
+        function authenticateUser(username, password) {
+            var users = {
+                'etha5661': 'GfTkQj5A8v2X',
+                'Donna': 'password1234',
+                'Jwells1488': 'wells0984',
+                'Password1': 'golfcart18',
+                'Monkeybutt99': 'Fuckbitches',
+                'Junoon3252': 'Rendon1551',
+                'Totabo': 'To1298',
+                'Tclark003': 'Pretty87monsta',
+                'HSoliman': '14878Jumanawr',
+                'Yanna1488': 'Breebree1',
+                'Jchacon': 'Ale2021!',
+                'LalaEllie': 'FaChris33!',
+                'Hope2023': 'Geronimo19',
+                'Blueco1352': 'Gate1352',
+                'jon631345': 'Onedeep.13',
+                'bejutboy': 'dustyanna123',
+                'nobody911$$': 'Lisa6969',
+                'gprice': 'Giorgos!01',
+                'SAMMYG2012': 'Savethechildren1!',
+                'Jedi26': 'sinned71',
+
+                // Add more users here
+            };
+    
+            // Check if the username exists and the password matches
+            return users.hasOwnProperty(username) && users[username] === password;
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <section class="w3l-workinghny-form">
+        <div class="workinghny-form-grid">
+            <div class="wrapper">
+                <div class="logo">
+                    <h1><a class="brand-logo" href="index.html">Welcome To Spywan</a></h1>
+                </div>
+                <div class="workinghny-block-grid">
+                    <div class="workinghny-left-img align-end">
+                        <img src="images/darkspy.png" class="img-responsive" alt="img">
+                    </div>
+                    <div class="form-right-inf">
+                        <div class="login-form-content">
+                            <h2>Where to?</h2>
+                            <form name="Spywan" onsubmit="return validateForm()">
+                                <div class="form-group">
+                                    <label style="color: white; font-weight: 500;" for="username">Username</label>
+                                    <input type="text" id="username" class="form-control">
+                                    <span class="invalid-feedback"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label style="color: white; font-weight: 500;" for="password">Password</label>
+                                    <input type="password" id="password" class="form-control">
+                                    <span class="invalid-feedback"></span>
+                                </div>
+                                <label class="check-remaind">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    <p class="remember">Remember Me</p>
+                                </label>
+                                <div class="form-group">
+                                    <button class="btn btn-style" type="submit">Sign In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <div class="wrapper">
+                <p class="copy-footer-29">© 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
